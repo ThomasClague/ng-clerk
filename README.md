@@ -1,1 +1,1 @@
-# ngx-clerk
+# ng-clerk

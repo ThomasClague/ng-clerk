@@ -1,6 +1,6 @@
-import baseConfig from '../../jest.config';
+const baseConfig = require('../../jest.config');
 
-export default {
+module.exports = {
   ...baseConfig,
   moduleNameMapper: {
     '@core/(.*)': '<rootDir>/src/app/core/$1',

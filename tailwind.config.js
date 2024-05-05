@@ -1,6 +1,6 @@
 /** @type {import('tailwindcss').Config} */
 module.exports = {
-  content: ['./projects/ngx-clerk-showcase/**/*.{html,ts}'],
+  content: ['./projects/ng-clerk-showcase/**/*.{html,ts}'],
   theme: {
     extend: {},
   },

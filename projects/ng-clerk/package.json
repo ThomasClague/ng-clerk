@@ -1,5 +1,5 @@
 {
-  "name": "ngx-clerk",
+  "name": "ng-clerk",
   "version": "1.0.0",
   "peerDependencies": {
     "@angular/common": "^15.0.4",

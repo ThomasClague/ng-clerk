@@ -3,23 +3,23 @@
   "version": 1,
   "newProjectRoot": "projects",
   "projects": {
-    "ngxClerk": {
+    "ngClerk": {
       "projectType": "library",
-      "root": "projects/ngx-clerk",
-      "sourceRoot": "projects/ngx-clerk/src",
+      "root": "projects/ng-clerk",
+      "sourceRoot": "projects/ng-clerk/src",
       "prefix": "lib",
       "architect": {
         "build": {
           "builder": "@angular-devkit/build-angular:ng-packagr",
           "options": {
-            "project": "projects/ngx-clerk/ng-package.json"
+            "project": "projects/ng-clerk/ng-package.json"
           },
           "configurations": {
             "production": {
-              "tsConfig": "projects/ngx-clerk/tsconfig.lib.prod.json"
+              "tsConfig": "projects/ng-clerk/tsconfig.lib.prod.json"
             },
             "development": {
-              "tsConfig": "projects/ngx-clerk/tsconfig.lib.json"
+              "tsConfig": "projects/ng-clerk/tsconfig.lib.json"
             }
           },
           "defaultConfiguration": "production"
@@ -27,36 +27,36 @@
         "test": {
           "builder": "@angular-builders/jest:run",
           "options": {
-            "tsConfig": "projects/ngx-clerk/tsconfig.spec.json"
+            "tsConfig": "projects/ng-clerk/tsconfig.spec.json"
           }
         }
       }
     },
-    "ngxClerkShowcase": {
+    "ngClerkShowcase": {
       "projectType": "application",
       "schematics": {
         "@schematics/angular:component": {
           "style": "scss"
         }
       },
-      "root": "projects/ngx-clerk-showcase",
-      "sourceRoot": "projects/ngx-clerk-showcase/src",
+      "root": "projects/ng-clerk-showcase",
+      "sourceRoot": "projects/ng-clerk-showcase/src",
       "prefix": "app",
       "architect": {
         "build": {
           "builder": "@angular-devkit/build-angular:browser",
           "options": {
-            "outputPath": "dist/ngx-clerk-showcase",
-            "index": "projects/ngx-clerk-showcase/src/index.html",
-            "main": "projects/ngx-clerk-showcase/src/main.ts",
-            "polyfills": "projects/ngx-clerk-showcase/src/polyfills.ts",
-            "tsConfig": "projects/ngx-clerk-showcase/tsconfig.app.json",
+            "outputPath": "dist/ng-clerk-showcase",
+            "index": "projects/ng-clerk-showcase/src/index.html",
+            "main": "projects/ng-clerk-showcase/src/main.ts",
+            "polyfills": "projects/ng-clerk-showcase/src/polyfills.ts",
+            "tsConfig": "projects/ng-clerk-showcase/tsconfig.app.json",
             "inlineStyleLanguage": "scss",
             "assets": [
-              "projects/ngx-clerk-showcase/src/favicon.ico",
-              "projects/ngx-clerk-showcase/src/assets"
+              "projects/ng-clerk-showcase/src/favicon.ico",
+              "projects/ng-clerk-showcase/src/assets"
             ],
-            "styles": ["projects/ngx-clerk-showcase/src/styles.scss"],
+            "styles": ["projects/ng-clerk-showcase/src/styles.scss"],
             "scripts": []
           },
           "configurations": {
@@ -75,8 +75,8 @@
               ],
               "fileReplacements": [
                 {
-                  "replace": "projects/ngx-clerk-showcase/src/environments/environment.ts",
-                  "with": "projects/ngx-clerk-showcase/src/environments/environment.prod.ts"
+                  "replace": "projects/ng-clerk-showcase/src/environments/environment.ts",
+                  "with": "projects/ng-clerk-showcase/src/environments/environment.prod.ts"
                 }
               ],
               "outputHashing": "all"
@@ -96,10 +96,10 @@
           "builder": "@angular-devkit/build-angular:dev-server",
           "configurations": {
             "production": {
-              "buildTarget": "ngxClerkShowcase:build:production"
+              "buildTarget": "ngClerkShowcase:build:production"
             },
             "development": {
-              "buildTarget": "ngxClerkShowcase:build:development"
+              "buildTarget": "ngClerkShowcase:build:development"
             }
           },
           "defaultConfiguration": "development"
@@ -107,18 +107,18 @@
         "extract-i18n": {
           "builder": "@angular-devkit/build-angular:extract-i18n",
           "options": {
-            "buildTarget": "ngxClerkShowcase:build"
+            "buildTarget": "ngClerkShowcase:build"
           }
         },
         "test": {
           "builder": "@angular-builders/jest:run",
           "options": {
-            "tsConfig": "projects/ngx-clerk-showcase/tsconfig.spec.json",
+            "tsConfig": "projects/ng-clerk-showcase/tsconfig.spec.json",
             "assets": [
-              "projects/ngx-clerk-showcase/src/favicon.ico",
-              "projects/ngx-clerk-showcase/src/assets"
+              "projects/ng-clerk-showcase/src/favicon.ico",
+              "projects/ng-clerk-showcase/src/assets"
             ],
-            "styles": ["projects/ngx-clerk-showcase/src/styles.scss"],
+            "styles": ["projects/ng-clerk-showcase/src/styles.scss"],
             "scripts": []
           }
         }

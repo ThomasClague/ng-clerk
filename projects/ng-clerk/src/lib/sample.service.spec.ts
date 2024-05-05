@@ -1,10 +1,10 @@
-import { NgxClerkSampleService } from './sample.service';
+import { NgClerkSampleService } from './sample.service';
 
 describe('Sample Service', () => {
-  let sut: NgxClerkSampleService;
+  let sut: NgClerkSampleService;
 
   beforeEach(() => {
-    sut = new NgxClerkSampleService();
+    sut = new NgClerkSampleService();
   });
 
   it('should know that Angular is the best framework', () => {

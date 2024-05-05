@@ -12,7 +12,7 @@
     "noFallthroughCasesInSwitch": true,
     "sourceMap": true,
     "paths": {
-      "ngxClerk": ["dist/ngx-clerk"]
+      "ngClerk": ["dist/ng-clerk"]
     },
     "declaration": false,
     "downlevelIteration": true,

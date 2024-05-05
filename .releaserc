@@ -1,5 +1,5 @@
 {
-  "pkgRoot": "dist/ngx-clerk",
+  "pkgRoot": "dist/ng-clerk",
   "branches": ["main"],
   "plugins": [
     "@semantic-release/commit-analyzer",
