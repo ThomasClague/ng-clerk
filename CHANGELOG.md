@@ -1,3 +1,10 @@
+# [1.1.0](https://github.com/ThomasClague/ng-clerk/compare/v1.0.0...v1.1.0) (2024-05-06)
+
+
+### Features
+
+* add clerk key injection token ([adaf1e4](https://github.com/ThomasClague/ng-clerk/commit/adaf1e4e0cd4ed2b5c69d9a5b9d6eec2349463a5))
+
 # 1.0.0 (2024-05-06)
 
 
