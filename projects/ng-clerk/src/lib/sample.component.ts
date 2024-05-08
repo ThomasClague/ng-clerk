@@ -1,6 +1,6 @@
 import { ChangeDetectionStrategy, Component, Inject } from '@angular/core';
 
-import { CLERK_PUBLISHABLE_KEY } from './config/injection-token';
+import { CLERK_PUBLISHABLE_KEY } from './injectors/injection-token';
 import { NgClerkSampleService } from './sample.service';
 
 @Component({

@@ -5,7 +5,9 @@
     "@angular/common": "^17.0.0",
     "@angular/core": "^17.0.0",
     "@angular/cdk": "^17.0.0",
-    "rxjs": "^6.5.3 || ^7.4.0"
+    "rxjs": "^6.5.3 || ^7.4.0",
+    "@clerk/clerk-js": "^5.0.0",
+    "@clerk/types": "^4.0.0"
   },
   "dependencies": {
     "tslib": "^2.3.0"
