@@ -1,3 +1,15 @@
+# [1.2.0](https://github.com/ThomasClague/ng-clerk/compare/v1.1.0...v1.2.0) (2024-05-08)
+
+
+### Bug Fixes
+
+* increasing bundle limit ([1c75969](https://github.com/ThomasClague/ng-clerk/commit/1c75969f26054ad7f7a525901049fcd27684e304))
+
+
+### Features
+
+* core components ([338a067](https://github.com/ThomasClague/ng-clerk/commit/338a067edffe0c92871a4249ea86419d315e3e3f))
+
 # [1.1.0](https://github.com/ThomasClague/ng-clerk/compare/v1.0.0...v1.1.0) (2024-05-06)
 
 
