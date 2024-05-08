@@ -1,3 +1,12 @@
+## [1.2.1](https://github.com/ThomasClague/ng-clerk/compare/v1.2.0...v1.2.1) (2024-05-08)
+
+
+### Bug Fixes
+
+* add tests ([e7e6d45](https://github.com/ThomasClague/ng-clerk/commit/e7e6d45aba1e2cd32b1756c55ef21e77d8b073a3))
+* broken project refs ([e60895b](https://github.com/ThomasClague/ng-clerk/commit/e60895bad2da0b91bc39af97be158a28469ec9dc))
+* exposing components and service ([a781426](https://github.com/ThomasClague/ng-clerk/commit/a781426186cc63bc955b7d05f585287c9099621b))
+
 # [1.2.0](https://github.com/ThomasClague/ng-clerk/compare/v1.1.0...v1.2.0) (2024-05-08)
 
 
