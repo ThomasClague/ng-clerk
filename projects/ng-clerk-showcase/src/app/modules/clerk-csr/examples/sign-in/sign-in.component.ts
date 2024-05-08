@@ -10,13 +10,11 @@ import { NgClerkUserButtonComponent } from 'projects/ng-clerk/src/lib/components
 import { NgClerkUserProfileComponent } from 'projects/ng-clerk/src/lib/components/user-profile.component';
 import { CLERK_PUBLISHABLE_KEY } from 'projects/ng-clerk/src/lib/injectors/injection-token';
 import { ClerkService } from 'projects/ng-clerk/src/lib/services/clerk.service';
-import { NgClerkSampleComponent } from 'projects/ng-clerk/src/public-api';
 
 @Component({
   selector: 'app-sign-in',
   standalone: true,
   imports: [
-    NgClerkSampleComponent,
     NgClerkSignInComponent,
     NgClerkSignUpComponent,
     NgClerkUserButtonComponent,

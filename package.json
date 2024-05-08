@@ -33,7 +33,6 @@
     "@angular/platform-browser-dynamic": "^17.3.7",
     "@angular/router": "^17.3.7",
     "@clerk/clerk-js": "^5.2.1",
-    "ng-clerk": "^1.2.0",
     "react": "^18.3.1",
     "rxjs": "~7.5.0",
     "tslib": "^2.3.0",

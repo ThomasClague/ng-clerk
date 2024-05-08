@@ -11,7 +11,6 @@ import { NgClerkSignUpComponent } from 'projects/ng-clerk/src/lib/components/sig
 import { NgClerkUserButtonComponent } from 'projects/ng-clerk/src/lib/components/user-button.component';
 import { NgClerkUserProfileComponent } from 'projects/ng-clerk/src/lib/components/user-profile.component';
 import { CLERK_INITIALIZER } from 'projects/ng-clerk/src/lib/initializer';
-import { NgClerkSampleComponent } from 'projects/ng-clerk/src/public-api';
 import { ClerkCsrRoutingModule } from './clerk-csr-routing.module';
 
 @NgModule({
@@ -19,7 +18,6 @@ import { ClerkCsrRoutingModule } from './clerk-csr-routing.module';
   imports: [
     CommonModule,
     ClerkCsrRoutingModule,
-    NgClerkSampleComponent,
     NgClerkSignInComponent,
     NgClerkSignUpComponent,
     NgClerkUserButtonComponent,
