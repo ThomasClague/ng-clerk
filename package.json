@@ -32,6 +32,9 @@
     "@angular/platform-browser": "^17.3.7",
     "@angular/platform-browser-dynamic": "^17.3.7",
     "@angular/router": "^17.3.7",
+    "@clerk/clerk-js": "^5.2.1",
+    "@clerk/types": "^4.2.0",
+    "react": "^18.3.1",
     "rxjs": "~7.5.0",
     "tslib": "^2.3.0",
     "zone.js": "~0.14.4"
@@ -52,6 +55,7 @@
     "@semantic-release/exec": "^6.0.3",
     "@types/jest": "29.2.4",
     "@types/node": "^18.11.17",
+    "@types/react": "^18.3.1",
     "@typescript-eslint/eslint-plugin": "^6.21.0",
     "@typescript-eslint/parser": "^6.21.0",
     "autoprefixer": "^10.4.13",
@@ -72,7 +76,9 @@
     "replace-json-property": "^1.8.0",
     "semantic-release": "^19.0.5",
     "tailwindcss": "^3.2.4",
-    "typescript": "^5.4.5"
+    "typescript": "^5.4.5",
+    "@clerk/clerk-react": "^5.0.0",
+    "@clerk/types": "^4.0.0"
   },
   "commitlint": {
     "extends": [

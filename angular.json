@@ -57,7 +57,7 @@
               "projects/ng-clerk-showcase/src/assets"
             ],
             "styles": ["projects/ng-clerk-showcase/src/styles.scss"],
-            "scripts": []
+            "scripts": ["node_modules/@clerk/clerk-js/dist/clerk.js"]
           },
           "configurations": {
             "production": {

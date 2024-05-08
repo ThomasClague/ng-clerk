@@ -1,23 +1,25 @@
 import { NgModule } from '@angular/core';
 import { BrowserModule } from '@angular/platform-browser';
-import { HIGHLIGHT_OPTIONS, HighlightModule } from 'ngx-highlightjs';
-
-import { NgClerkSampleComponent } from '../../../ng-clerk/src/lib/sample.component';
-
-import { CLERK_PUBLISHABLE_KEY } from 'projects/ng-clerk/src/lib/config/injection-token';
+import { HighlightModule } from 'ngx-highlightjs';
+import { CLERK_INITIALIZER } from 'projects/ng-clerk/src/lib/initializer';
+import { CLERK_PUBLISHABLE_KEY } from 'projects/ng-clerk/src/lib/injectors/injection-token';
+import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
+import { SetKeyComponent } from './components/set-key/set-key.component';
+import { ConfigService } from './services/config.service';
 
 @NgModule({
   declarations: [AppComponent],
-  imports: [BrowserModule, HighlightModule, NgClerkSampleComponent],
+  imports: [BrowserModule, AppRoutingModule, HighlightModule, SetKeyComponent],
   providers: [
     {
-      provide: HIGHLIGHT_OPTIONS,
-      useValue: {
-        fullLibraryLoader: async () => await import('highlight.js'),
-      },
+      provide: CLERK_PUBLISHABLE_KEY,
+      // In real application, replace useFactory with useValue and pass your publishable key
+      // useValue: '',
+      useFactory: (configService: ConfigService) => configService.getConfig(),
+      deps: [ConfigService],
     },
-    { provide: CLERK_PUBLISHABLE_KEY, useValue: 'mykey' },
+    CLERK_INITIALIZER,
   ],
   bootstrap: [AppComponent],
 })
